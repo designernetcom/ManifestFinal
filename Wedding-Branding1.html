@@ -44,6 +44,8 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
 
   <body class="hidden">
@@ -62,113 +64,218 @@
         <!-- Page Content -->
         <div id="page-content" class="light-content">
           <!-- Header -->
-          <header class="classic-menu">
-            <div id="header-container">
-              <!-- Logo -->
-              <div id="logo" class="hide-ball">
-                <a
-                  class="ajax-link"
-                  data-type="page-transition"
-                  href="index.html"
-                >
-                  <img
-                    class="black-logo"
-                    src="./assets/images/mani-removebg-preview (1).png"
-                    alt="ClaPat Logo"
-                  />
-                  <img
-                    class="white-logo"
-                    src="./assets/images/mani-removebg-preview (1).png"
-                    alt="ClaPat Logo"
-                  />
-                </a>
-              </div>
-              <!--/Logo -->
+          <style>
+            @media (max-width: 768px) {
+              header.classic-menu {
+                background-color: #0f0d0d; /* Black background */
+                height: 110px;
+              }
 
-              <!-- Navigation -->
-              <nav>
-                <div class="nav-height">
-                  <div class="outer">
-                    <div class="inner">
-                      <ul data-breakpoint="1025" class="flexnav">
-                        <li class="link menu-timeline">
-                          <a class="link" href="#">Home</a>
-                          <ul>
-                            <li>
+              #logo img {
+                position: absolute;
+                top: -6%;
+                max-width: 120px; /* Adjust logo width */
+                height: auto; /* Maintain aspect ratio */
+              }
+              #burger-wrapper {
+                position: absolute;
+
+                top: 5%;
+              }
+
+
+            }
+          </style>
+            
+            <!-- Header -->
+            <header class="classic-menu" style="  position: relative; background-color: black;">
+                <div id="header-container">
+                
+                
+                <!-- Logo -->
+                <div id="logo" class="hide-ball">
+                    <a
+                      class="ajax-link"
+                      data-type="page-transition"
+                      href="index.html"
+                    >
+                      <img
+                        class="black-logo"
+                        src="./assets/images/mani-removebg-preview (1).png"
+                        alt="ClaPat Logo"
+                      />
+                      <img
+                        class="white-logo"
+                        src="./assets/images/mani-removebg-preview (1).png"
+                        alt="ClaPat Logo"
+                      />
+                    </a>
+                  </div>
+                <!--/Logo -->             
+                
+                <!-- Navigation -->
+                <nav>
+                    <div class="nav-height">
+                      <div class="outer">
+                        <div class="inner">
+                          <ul data-breakpoint="1025" class="flexnav">
+                            <li class="link menu-timeline active">
+                              <a class="link"  style="font-family:  var(--text-font);" href="#">Home</a>
+                              <!-- <ul>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="index.html"
+                                    data-type="page-transition"
+                                    >Split Slider</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link active"
+                                    href="index-centered.html"
+                                    data-type="page-transition"
+                                    >Centerd Slider</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="index-full.html"
+                                    data-type="page-transition"
+                                    >Fullscreen Slider</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="index-fullmenu.html"
+                                    data-type="page-transition"
+                                    >Overlay menu</a
+                                  >
+                                </li>
+                              </ul> -->
+                            </li>
+                            <li class="link menu-timeline">
+                              <a class="ajax-link link" href="about.html">About</a>
+                            </li>
+                            <style>
+                              @media (max-width: 768px) {
+                                .link.menu-timeline {
+                                  text-align: left;
+                                }
+    
+                                .link.menu-timeline a {
+                                  display: inline-block;
+                                  text-align: left;
+                                }
+                              }
+                            </style>
+                            <li class="link menu-timeline" >
+                              <a class="ajax-link link" 
+                                >Services</a
+                              >
+                              <ul>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="project04.html"
+                                    data-type="page-transition"
+                                    >Venue Selection</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link active"
+                                    href="./Wedding-Branding1.html"
+                                    data-type="page-transition"
+                                    >Catering & Beverage</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="project05.html"
+                                    data-type="page-transition"
+                                    >Corporate Event</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="Intimate-Wedding-Décor.html"
+                                    data-type="page-transition"
+                                    >Intimate Décor</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="weddingg-planning1.html"
+                                    data-type="page-transition"
+                                    >Wedding Planning</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="wedding-branding.html"
+                                    data-type="page-transition"
+                                    >Wedding Branding</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="Transportation-&-Logistics-Management.html"
+                                    data-type="page-transition"
+                                    >Transportation Management</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="ajax-link"
+                                    href="Event-Entries-&-SFX.html"
+                                    data-type="page-transition"
+                                    >Event Entries & SFX</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="link menu-timeline">
                               <a
-                                class="ajax-link"
-                                href="index.html"
-                                data-type="page-transition"
-                                >Split Slider</a
+                                class="ajax-link link"
+                                data-type=""
+                                href="./Gallary11.html"
+                                >Gallery</a
                               >
                             </li>
-                            <li>
+                            <li class="link menu-timeline">
                               <a
-                                class="ajax-link"
-                                href="index-centered.html"
-                                data-type="page-transition"
-                                >Centerd Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="index-full.html"
-                                data-type="page-transition"
-                                >Fullscreen Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="index-fullmenu.html"
-                                data-type="page-transition"
-                                >Overlay menu</a
+                                class="ajax-link link"
+                                data-type=""
+                                href="contact.html"
+                                >Contact</a
                               >
                             </li>
                           </ul>
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="ajax-link link"
-                            data-type="page-transition"
-                            href="about.html"
-                            >About</a
-                          >
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="ajax-link link"
-                            data-type="page-transition"
-                            href="contact.html"
-                            >Contact</a
-                          >
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="link"
-                            target="_blank"
-                            href="https://themeforest.net/item/grenada-creative-ajax-portfolio-showcase-slider-template/22576532"
-                            >Buy Now</a
-                          >
-                        </li>
-                      </ul>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </nav>
+                <!--/Navigation -->
+                
+                <!-- Menu Burger -->
+                <div id="burger-wrapper" class="parallax-wrap">
+                    <div id="menu-burger" class="parallax-element">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-              </nav>
-              <!--/Navigation -->
-
-              <!-- Menu Burger -->
-              <div id="burger-wrapper" class="parallax-wrap">
-                <div id="menu-burger" class="parallax-element">
-                  <span></span>
-                  <span></span>
+                <!--/Menu Burger -->
+            
                 </div>
-              </div>
-              <!--/Menu Burger -->
-            </div>
-          </header>
+            </header>
           <!--/Header -->
 
           <!-- Main -->
@@ -212,7 +319,7 @@
                 <div
                   id="hero-bg-image"
                   style="
-                    background-image: url(https://img.freepik.com/free-photo/close-up-appetizing-ramadan-meal_23-2151182445.jpg?t=st=1744975216~exp=1744978816~hmac=10e2921c3941abaf9b730460524ad7a29c4c63374e67e0d25adec723f742dae4&w=1380);
+                    background-image: url(./close-up-appetizing-ramadan-meal.jpg);
                   "
                 ></div>
               </div>
@@ -273,7 +380,7 @@
                   <div class="container">
                     <figure class="has-animation" data-delay="10">
                       <img
-                        src="https://img.freepik.com/free-photo/long-table-with-luxury-plates-decorated-with-colorful-flowers-candles_181624-24389.jpg?t=st=1744975802~exp=1744979402~hmac=2eef9797b5a4ff8dadf847651ecc8d57e8a98ae3bd9e0fc80b45b6c17aa61ece&w=1380"
+                        src="./long-table-with-luxury-plates-decorated-with-colorful-flowers-candles.jpg"
                         alt="Image Title"
                       />
                       <figcaption>Image Caption</figcaption>
@@ -369,7 +476,7 @@
                 <div class="container">
                   <figure class="has-animation" data-delay="10">
                     <img
-                      src="https://img.freepik.com/free-photo/close-up-appetizing-ramadan-meal_23-2151182554.jpg?t=st=1744975478~exp=1744979078~hmac=87d06d096db3e4158d5e65cc9de9a5182521144fe16e58218fb0839f3f89a3d5&w=1380"
+                      src="./selective-focus-point-catering-buffet-food.jpg"
                       alt="Image Title"
                     />
                     <figcaption>Image Caption</figcaption>
@@ -382,82 +489,65 @@
           <!--/Main -->
 
           <!-- Footer -->
-          <footer class="hidden">
-            <div id="footer-container">
-              <div class="copyright-wrap">
-                <div class="copyright-icon">
-                  <i class="fa fa-copyright" aria-hidden="true"></i>
-                </div>
-                <div class="copyright-text">Copyright</div>
-                <div class="copyright">
-                  <p>
-                    2018 ©
-                    <a
-                      class="link"
-                      target="_blank"
-                      href="https://www.clapat.com/themes/grenada/"
-                      >Grenada Theme</a
-                    >. Design by
-                    <a
-                      class="link"
-                      target="_blank"
-                      href="https://www.clapat.com/"
-                      >Clapat</a
-                    >.
-                  </p>
-                </div>
-              </div>
-
-              <div class="socials-wrap">
-                <div class="socials-icon">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                </div>
-                <div class="socials-text">Follow Us</div>
-                <ul class="socials">
-                  <li>
-                    <span class="parallax-wrap"
-                      ><a
-                        class="parallax-element"
-                        href="https://www.facebook.com/clapat.ro"
-                        target="_blank"
-                        >Fb</a
-                      ></span
-                    >
-                  </li>
-                  <li>
-                    <span class="parallax-wrap"
-                      ><a
-                        class="parallax-element"
-                        href="https://www.dribbble.com/clapat"
-                        target="_blank"
-                        >Db</a
-                      ></span
-                    >
-                  </li>
-                  <li>
-                    <span class="parallax-wrap"
-                      ><a
-                        class="parallax-element"
-                        href="https://www.twitter.com/clapatdesign"
-                        target="_blank"
-                        >Tw</a
-                      ></span
-                    >
-                  </li>
-                  <li>
-                    <span class="parallax-wrap"
-                      ><a
-                        class="parallax-element"
-                        href="https://www.behance.com/clapat"
-                        target="_blank"
-                        >Be</a
-                      ></span
-                    >
-                  </li>
-                </ul>
-              </div>
+          <footer class="footer  ">
+            <div class="footer-left">
+              <p style="color: #fff;">© Manifest Events  Designed by <a style="color: #fff;" href="https://www.netcom-india.com/">Netcom Business Solutions</a></p>
+            </div>
+            <div class="footer-right">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </footer>
+           <style>
+           /* Base styles */
+.footer {
+
+padding: 20px 0;
+color: #fff;
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer a:hover {
+color: #f0c040; /* Highlight color on hover */
+}
+
+/* Container for consistent width */
+
+
+/* Footer sections */
+.footer-left p {
+margin-bottom: 10px;
+margin-top: 10px;
+font-size: 14px;
+}
+
+.footer-right a {
+margin-left: 15px;
+font-size: 18px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+
+.footer-right {
+  margin-top: 10px;
+}
+
+.footer-right a {
+  margin: 0 10px;
+}
+}
+
+
+           </style>
           <!--/Footer -->
         </div>
         <!--/Page Content -->

@@ -684,6 +684,7 @@
 		text-align: center;
 		opacity: 1;		
 		margin: 0px;
+		
 		margin-left: 0px;
 		margin-left: -1px;
 		margin-bottom:-1px;
@@ -693,6 +694,8 @@
 	.light-content .clients-table li {
 		border: 1px solid #222;
 		background-color:#0f1010;
+		width: 330px;
+		
 	}
 	
 	.clients-table li img {

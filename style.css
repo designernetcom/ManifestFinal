@@ -968,7 +968,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img {
 		display: block;
-		height: 100px;
+		height: 110px;
 		width: auto;
 		max-width:none;
 	}
@@ -983,7 +983,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img.white-logo {
 		position:absolute;
-		top:0;
+		top:-15%;
 		left:0;
 		opacity:0;
 	}
@@ -1468,7 +1468,7 @@ Primary use:	Showcase Portfolio
 		display: table;
 		width: 100%;
 		max-width:1280px;
-		padding: 180px 60px 180px 60px;
+		padding: 180px 60px 120px 60px;
 		margin: 0 auto;
 		height: 100%;
 		position: relative;
@@ -2813,7 +2813,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	.container {
-    	padding: 0 20px;
+    	padding: 13px 20px;
 	}
 	
 	#footer-container {
