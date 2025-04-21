@@ -44,32 +44,29 @@ Function Page Load
 		
 		
 		// Percentage Increment Animation
-		$(document).ready(function () {
-			var $percentID = $("#precent"),
-				start = 1,
+		var PercentageID = $("#precent"),
+				start = 0,
 				end = 100,
-				duration = 4000; // total animation time in ms
-	  
-			animateValue($percentID, start, end, duration);
-	  
-			function animateValue($element, start, end, duration) {
-			  var range = end - start,
-				  current = start,
-				  increment = 1,
-				  stepTime = Math.abs(Math.floor(duration / range));
-	  
-			  var timer = setInterval(function () {
-				$element.text(current );
+				durataion = time;
+				animateValue(PercentageID, start, end, durataion);
+				
+		function animateValue(id, start, end, duration) {
+		  
+			var range = end - start,
+			  current = start,
+			  increment = end > start? 1 : -1,
+			  stepTime = Math.abs(Math.floor(duration / range)),
+			  obj = $(id);
+			
+			var timer = setInterval(function() {
 				current += increment;
-				if (current > end) {
-				  clearInterval(timer);
-				  $(".preloader-wrap").fadeOut(500, function () {
-					$(".main-content").fadeIn(500);
-				  });
+				$(obj).text(current);
+			  //obj.innerHTML = current;
+				if (current == end) {
+					clearInterval(timer);
 				}
-			  }, stepTime);
-			}
-		  });
+			}, stepTime);
+		}
 		
 		// Fading Out Loadbar on Finised
 		setTimeout(function(){
@@ -105,15 +102,6 @@ Function Page Load
 								},
 								waitForAll: true
 							});
-
-                        //  added by new dev
-
-						
-
-
-
-
-
 							
 							TweenMax.to($("#main"), 0.2, {force3D:true, opacity:1, delay:0.1, ease:Power2.easeOut});
 							if( $('#hero').hasClass("has-image")) {	
@@ -454,12 +442,6 @@ Function Lazy Load
 			},
 			waitForAll: true
 		});
-		// Set background image of #image-slider to match active slide
-var activeSlideImg = $(".swiper-slide-active img").attr("src");
-if (activeSlideImg) {
-  $("#image-slider").css("background-image", "url(" + activeSlideImg + ")");
-}
-
 		
 		
 		TweenMax.to($("#main"), 0.2, {force3D:true, opacity:1, delay:0.1, ease:Power2.easeOut});
