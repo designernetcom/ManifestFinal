@@ -968,7 +968,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img {
 		display: block;
-		height: 140px;
+		height: 110px;
 		width: auto;
 		max-width:none;
 	}
@@ -983,7 +983,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img.white-logo {
 		position:absolute;
-		top:0;
+		top:-15%;
 		left:0;
 		opacity:0;
 	}

@@ -1,541 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "../../../www.google-analytics.com/analytics.js",
-        "ga"
-      );
 
-      ga("create", "UA-111105160-2", "auto");
-      ga("send", "pageview");
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "../../../www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-    <title>Manifest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/ico" href="favicon.ico" /> -->
-    <link href="assets/new/style.css" rel="stylesheet" />
-    <link href="assets/new/css/font-awesome.min.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
-      rel="stylesheet"
-    />
-  </head>
+    ga("create", "UA-111105160-2", "auto");
+    ga("send", "pageview");
+  </script>
 
-  <body class="hidden">
-    <main>
-      <!-- Preloader -->
-      <div class="preloader-wrap">
-        <div class="outer">
-          <div class="inner">
-            <div class="percentage" id="precent"></div>
-          </div>
+  <title>Manifest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/ico" href="favicon.ico" /> -->
+  <link href="./assets/new/style.css" rel="stylesheet" />
+  <link href="assets/new/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet" />
+</head>
+
+<body class="hidden">
+  <main>
+    <!-- Preloader -->
+    <div class="preloader-wrap">
+      <div class="outer">
+        <div class="inner">
+          <div class="percentage" id="precent"></div>
         </div>
       </div>
-      <!--/Preloader -->
+    </div>
+    <!--/Preloader -->
 
-      <div class="cd-index cd-main-content">
-        <!-- Page Content -->
-        <div id="page-content" class="light-content">
-          <!-- Header -->
-          <header class="classic-menu">
-            <div id="header-container">
-              <!-- Logo -->
-              <div id="logo" class="hide-ball">
-                <a
-                  class="ajax-link"
-                  data-type="page-transition"
-                  href="index.html"
-                >
-                  <!-- <img
+    <div class="cd-index cd-main-content">
+      <!-- Page Content -->
+      <div id="page-content" class="light-content">
+        <!-- Header -->
+        <header class="classic-menu">
+          <div id="header-container">
+            <!-- Logo -->
+            <div id="logo" class="hide-ball">
+              <a class="ajax-link" data-type="page-transition" href="index.html">
+                <!-- <img
                     class="black-logo"
                     src="assets/images/mani-removebg-preview (1).png"
                     alt="Logo"
                   /> -->
-                  <img
-                    class="white-logo"
-                    src="assets/images/mani-removebg-preview (1).png"
-                    alt=" Logo"
-                  />
-                </a>
-              </div>
-              <!--/Logo -->
-
-              <!-- Navigation -->
-              <nav>
-                <div class="nav-height">
-                  <div class="outer">
-                    <div class="inner">
-                      <ul data-breakpoint="1025" class="flexnav">
-                        <li class="link menu-timeline active">
-                          <a class="link"  style="font-family:  var(--text-font);" href="#">Home</a>
-                          <!-- <ul>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="index.html"
-                                data-type="page-transition"
-                                >Split Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link active"
-                                href="index-centered.html"
-                                data-type="page-transition"
-                                >Centerd Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="index-full.html"
-                                data-type="page-transition"
-                                >Fullscreen Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="index-fullmenu.html"
-                                data-type="page-transition"
-                                >Overlay menu</a
-                              >
-                            </li>
-                          </ul> -->
-                        </li>
-                        <li class="link menu-timeline">
-                          <a class="ajax-link link" href="about.html">About</a>
-                        </li>
-                        <style>
-                          @media (max-width: 768px) {
-                            .link.menu-timeline {
-                              text-align: left;
-                            }
-
-                            .link.menu-timeline a {
-                              display: inline-block;
-                              text-align: left;
-                            }
-                          }
-                        </style>
-                        <li class="link menu-timeline" >
-                          <a class="ajax-link link" 
-                            >Services</a
-                          >
-                          <ul>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="project04.html"
-                                data-type="page-transition"
-                                >Venue Selection</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link active"
-                                href="./Wedding-Branding1.html"
-                                data-type="page-transition"
-                                >Catering & Beverage</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="project05.html"
-                                data-type="page-transition"
-                                >Corporate Event</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="Intimate-Wedding-Décor.html"
-                                data-type="page-transition"
-                                >Intimate Décor</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="weddingg-planning1.html"
-                                data-type="page-transition"
-                                >Wedding Planning</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="wedding-branding.html"
-                                data-type="page-transition"
-                                >Wedding Branding</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="Transportation-&-Logistics-Management.html"
-                                data-type="page-transition"
-                                >Transportation Management</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="Event-Entries-&-SFX.html"
-                                data-type="page-transition"
-                                >Event Entries & SFX</a
-                              >
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="ajax-link link"
-                            data-type=""
-                            href="./Gallary11.html"
-                            >Gallery</a
-                          >
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="ajax-link link"
-                            data-type=""
-                            href="contact.html"
-                            >Contact</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-              <!--/Navigation -->
-              
-              <!-- Menu Burger -->
-              <div id="burger-wrapper" class="parallax-wrap">
-                <div id="menu-burger" class="parallax-element">
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-              <!--/Menu Burger -->
+                <img class="white-logo" src="assets/images/mani-removebg-preview (1).png" alt=" Logo" />
+              </a>
             </div>
-          </header>
+            <!--/Logo -->
 
-          <style>
-            @media (max-width: 768px) {
-              header.classic-menu {
-                background-color: #0f0d0d; /* Black background */
-                height: 110px;
-              }
+            <!-- Navigation -->
+            <nav>
+              <div class="nav-height">
+                <div class="outer">
+                  <div class="inner">
+                    <ul data-breakpoint="1025" class="flexnav">
+                      <li class="link menu-timeline active">
+                        <a class="link" href="#">Home</a>
 
-              #logo img {
-                max-width: 120px; /* Adjust logo width */
-                height: auto; /* Maintain aspect ratio */
-              }
-              #burger-wrapper {
-                position: absolute;
-
-                top: 10%;
-              }
-
-
-            }
-          </style>
-          <!--/Header -->
-
-          <!-- Main -->
-          <div id="main">
-            <!-- Main Content -->
-            <div id="main-content" class="split-slider">
-              <!-- Showcase Holder -->
-              <div id="showcase-holder" class="disabled">
-                <div id="showcase-slider" class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <!-- Section Slide -->
-
-                    <div
-                      class="swiper-slide active"
-                      data-number="01"
-                      data-slide="1"
-                    >
-                      <a
-                        class="ajax-link-project"
-                        href="./project04.html"
-                        data-type="page-transition"
-                      >
-                        <div class="slide-title" data-number="01">
-                          <span>Venue Selection</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="1">
-                        "Transform your event into an unforgettable experience
-                        by choosing the perfect venue tailored to your vision."
-                      </div>
-                    </div>
-                    <!--/Section Slide -->
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="02" data-slide="2">
-                      <a
-                        class="ajax-link-project"
-                        href="./Wedding-Branding1.html"
-                        data-type="page-transition"
-                      >
-                        <div class="slide-title" data-number="02">
-                          <span class="Catering">Catering & Beverage</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="2">
-                        "Crafting dreams into reality – your perfect wedding,
-                        beautifully planned."
-                      </div>
-                    </div>
-
-                    <!--/Section Slide -->
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="03" data-slide="3">
-                      <a class="ajax-link-project" href="./project05.html" data-type="page-transition">
-                        <div class="slide-title" data-number="03">
-                          <span>Corporate Event</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="3">
-                        "Turning your wedding into a signature statement of
-                        elegance."
-                      </div>
-                    </div>
-                    <!--/Section Slide -->
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="04" data-slide="4">
-                      <a class="ajax-link-project" href="./Intimate-Wedding-Décor.html" data-type="page-transition">
-                        <div class="slide-title" data-number="04">
-                          <span class="Decor">Intimate Decor</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="4">
-                        "Designing décor that speaks the language of love."
-                      </div>
-                    </div>
-                    <!--/Section Slide -->
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="05" data-slide="5">
-                      <a class="ajax-link-project" href="./weddingg-planning1.html" data-type="page-transition">
-                        <div class="slide-title" data-number="05">
-                          <span class="Wedding-Planning">Wedding Planning</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="5">
-                       
-                      </div>
-                    </div>
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="06" data-slide="6">
-                      <a class="ajax-link-project" data-type="page-transition">
-                        <div class="slide-title" data-number="06">
-                          <span class="GamesFun">Games & Fun Activity</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="6">
-                        "Let the fun begin – games and activities that bring
-                        everyone together!"
-                      </div>
-                    </div>
-                    <!--/Section Slide -->
-
-                    <!-- Section Slide -->
-                    <div class="swiper-slide" data-number="07" data-slide="7">
-                      <a class="ajax-link-project" data-type="page-transition">
-                        <div class="slide-title" data-number="07">
-                          <span class="Artist">Artist & Entertainment</span>
-                        </div>
-                      </a>
-                      <div class="slide-caption" data-slide-caption="7">
-                        "Where artistry meets applause – elevate your event with
-                        unforgettable entertainment."
-                      </div>
-                    </div>
-
-
-                    <!--/Section Slide -->
-                  </div>
-                </div>
-              </div>
-              
-              <style>
-                @media (max-width: 768px) {
-  .swiper-slide {
-    padding: 20px; /* Give spacing inside slides */
-    text-align: center;
-  }
-
-  .slide-title span {
-    font-size: 40px;
-    display: inline;
-    margin-bottom: 10px;
-  }
-  
-  .Catering{
-    font-size: 32px !important;
-    align-items: center;
-  }
- 
-  .Decor{
-    font-size: 42px !important;
-  }
-
-  .Wedding-Planning{
-    font-size: 36px !important;
-  }
-
-  .GamesFun{
-    font-size: 30px !important;
-  }
-  .Artist{
-    font-size: 30px !important;
-  }
-
- 
-}
-
-              </style>
-              <!-- Showcase Holder -->
-
-              <!-- Showcase Gallery -->
-              <div id="image-slider" >
-                <div class="image-slider-wrapper">
-                  <div
-                    class="slider-img"
-                    data-slide="1"
-                    data-src="assets/images/gallarynew/g5.jpg"
-                  >
-                  <div class="hero-video-wrapper">
-                    <video loop muted autoplay playsinline class="bgvid">
-                      <source
-                        src=" https://cdn.pixabay.com/video/2024/02/11/200139-912119482_tiny.mp4" style="object-fit: cover;"
-                        type="video/mp4"
-                      />
-                      <source
-                        src="https://media.istockphoto.com/id/2150203665/video/a-shot-of-an-indian-bride-showing-her-bridal-jewellery-at-her-indian-wedding-in-india.mp4?s=mp4-640x640-is&k=20&c=7YwdT35ggFSnwJ5gQub9GrgmdkpOI6pvAKze3VjQZnk="
-                        type="video/webm"
-                      />
-                    </video>
-                  </div></div>
-                  <div
-                    class="slider-img"
-                    data-slide="2"
-                    data-src="assets/images/gallarynew/g15.jpg"
-                  >
-                  <div class="hero-video-wrapper">
-                    <video loop muted autoplay playsinline class="bgvid">
-                      <source
-                        src="https://cdn.pixabay.com/video/2021/09/08/87806-601467089_tiny.mp4" style="object-fit: cover;"
-                        type="video/mp4"
-                      />
-                      <source
-                        src="https://media.istockphoto.com/id/2150203665/video/a-shot-of-an-indian-bride-showing-her-bridal-jewellery-at-her-indian-wedding-in-india.mp4?s=mp4-640x640-is&k=20&c=7YwdT35ggFSnwJ5gQub9GrgmdkpOI6pvAKze3VjQZnk="
-                        type="video/webm"
-                      />
-                    </video>
-                  </div></div>
-                  <div
-                    class="slider-img"
-                    data-slide="3"
-                    data-src="assets/images/gallarynew/g17.jpg"
-                  >
-                    <div class="hero-video-wrapper">
-                      <video loop muted autoplay playsinline class="bgvid">
-                        <source
-                          src="https://cdn.pixabay.com/video/2023/11/20/189858-886618183_tiny.mp4" style="object-fit: cover;"
-                          type="video/mp4"
-                        />
-                        <source
-                          src="https://media.gettyimages.com/id/1224104034/video/indian-or-hindu-traditional-ceremony-venue-decoration.mp4?s=mp4-640x640-gi&k=20&c=9zI2ug4j-hS_pzAz4fFJgSmmzQVNRuHjPmb4pbWz96s="
-                          type="video/webm"
-                        />
-                      </video>
-                    </div>
-                  </div>
-                  <div
-                    class="slider-img"
-                    data-slide="4"
-                    data-src="assets/images/gallarynew/g18.jpg"
-                  ></div>
-                  <div
-                    class="slider-img"
-                    data-slide="5"
-                    data-src="assets/images/gallarynew/g2.jpg"
-                  ></div>
-                  <div
-                    class="slider-img"
-                    data-slide="6"
-                    data-src="assets/images/gallarynew/g14.jpg"
-                  ></div>
-                  <div
-                    class="slider-img"
-                    data-slide="7"
-                    data-src="assets/images/gallarynew/g16.jpg"
-                  ></div>
-                </div>
-              </div>
-              <style>
-                       @media (max-width: 768px) {
-                            #image-slider {
-                              margin-top: 120px;
-                            }
+                      </li>
+                      <li class="link menu-timeline">
+                        <a class="ajax-link link" href="about.html">About</a>
+                      </li>
+                      <style>
+                        @media (max-width: 768px) {
+                          .link.menu-timeline {
+                            text-align: left;
                           }
 
+                          .link.menu-timeline a {
+                            display: inline-block;
+                            text-align: left;
+                          }
+                        }
+                      </style>
+                      <li class="link menu-timeline">
+                        <a class="ajax-link link">Services</a>
+                        <ul>
+                          <li>
+                            <a class="ajax-link" href="project04.html" data-type="page-transition">Venue Selection</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link active" href="./Wedding-Branding1.html"
+                              data-type="page-transition">Catering & Beverage</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="project05.html" data-type="page-transition">Corporate Event</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="Intimate-Wedding-Décor.html" data-type="page-transition">Intimate
+                              Décor</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="weddingg-planning1.html" data-type="page-transition">Wedding
+                              Planning</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="wedding-branding.html" data-type="page-transition">Wedding
+                              Branding</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="Transportation-&-Logistics-Management.html"
+                              data-type="page-transition">Transportation Management</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="Event-Entries-&-SFX.html" data-type="page-transition">Event
+                              Entries & SFX</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="link menu-timeline">
+                        <a class="ajax-link link" data-type="" href="./Gallary11.html">Gallery</a>
+                      </li>
+                      <li class="link menu-timeline">
+                        <a class="ajax-link link" data-type="" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!--/Navigation -->
 
-              </style>
-              <!--/Showcase Gallery -->
+            <!-- Menu Burger -->
+            <div id="burger-wrapper" class="parallax-wrap">
+              <div id="menu-burger" class="parallax-element">
+                <span></span>
+                <span></span>
+              </div>
             </div>
-            <!--/Main Content -->
+            <!--/Menu Burger -->
           </div>
-          <!--/Main -->
+        </header>
 
-          <!-- Footer -->
-         
-          <!--/Footer -->
+        <style>
+          @media (max-width: 768px) {
+            header.classic-menu {
+              background-color: #0f0d0d;
+              /* Black background */
+              height: 110px;
+            }
+
+            #logo img {
+              max-width: 120px;
+              /* Adjust logo width */
+              height: auto;
+              /* Maintain aspect ratio */
+            }
+
+            #burger-wrapper {
+              position: absolute;
+
+              top: 10%;
+            }
+
+
+          }
+        </style>
+        <!--/Header -->
+
+        <!-- Main -->
+        <div id="main">
+          <!-- Main Content -->
+          <div id="main-content" class="split-slider">
+            <!-- Showcase Holder -->
+            <div id="showcase-holder" class="disabled">
+              <div id="showcase-slider" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Section Slide -->
+
+                  <div class="swiper-slide active" data-number="01" data-slide="1">
+                    <a class="ajax-link-project" href="./project04.html" data-type="page-transition">
+                      <div class="slide-title" data-number="01">
+                        <span>Venue Selection</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="1">
+                      "Transform your event into an unforgettable experience
+                      by choosing the perfect venue tailored to your vision."
+                    </div>
+                  </div>
+                  <!--/Section Slide -->
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="02" data-slide="2">
+                    <a class="ajax-link-project" href="./Wedding-Branding1.html" data-type="page-transition">
+                      <div class="slide-title" data-number="02">
+                        <span class="Catering">Catering & Beverage</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="2">
+                      "Crafting dreams into reality – your perfect wedding,
+                      beautifully planned."
+                    </div>
+                  </div>
+
+                  <!--/Section Slide -->
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="03" data-slide="3">
+                    <a class="ajax-link-project" href="./project05.html" data-type="page-transition">
+                      <div class="slide-title" data-number="03">
+                        <span>Corporate Event</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="3">
+                      "Turning your wedding into a signature statement of
+                      elegance."
+                    </div>
+                  </div>
+                  <!--/Section Slide -->
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="04" data-slide="4">
+                    <a class="ajax-link-project" href="./Intimate-Wedding-Décor.html" data-type="page-transition">
+                      <div class="slide-title" data-number="04">
+                        <span class="Decor">Intimate Decor</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="4">
+                      "Designing décor that speaks the language of love."
+                    </div>
+                  </div>
+                  <!--/Section Slide -->
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="05" data-slide="5">
+                    <a class="ajax-link-project" href="./weddingg-planning1.html" data-type="page-transition">
+                      <div class="slide-title" data-number="05">
+                        <span class="Wedding-Planning">Wedding Planning</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="5">
+
+                    </div>
+                  </div>
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="06" data-slide="6">
+                    <a class="ajax-link-project" data-type="page-transition">
+                      <div class="slide-title" data-number="06">
+                        <span class="GamesFun">Games & Fun Activity</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="6">
+                      "Let the fun begin – games and activities that bring
+                      everyone together!"
+                    </div>
+                  </div>
+                  <!--/Section Slide -->
+
+                  <!-- Section Slide -->
+                  <div class="swiper-slide" data-number="07" data-slide="7">
+                    <a class="ajax-link-project" data-type="page-transition">
+                      <div class="slide-title" data-number="07">
+                        <span class="Artist">Artist & Entertainment</span>
+                      </div>
+                    </a>
+                    <div class="slide-caption" data-slide-caption="7">
+                      "Where artistry meets applause – elevate your event with
+                      unforgettable entertainment."
+                    </div>
+                  </div>
+
+
+                  <!--/Section Slide -->
+                </div>
+              </div>
+            </div>
+
+            <style>
+              @media (max-width: 768px) {
+                .swiper-slide {
+                  padding: 20px;
+                  /* Give spacing inside slides */
+                  text-align: center;
+                }
+
+                .slide-title span {
+                  font-size: 40px;
+                  display: inline;
+                  margin-bottom: 10px;
+                }
+
+                .Catering {
+                  font-size: 32px !important;
+                  align-items: center;
+                }
+
+                .Decor {
+                  font-size: 42px !important;
+                }
+
+                .Wedding-Planning {
+                  font-size: 36px !important;
+                }
+
+                .GamesFun {
+                  font-size: 30px !important;
+                }
+
+                .Artist {
+                  font-size: 30px !important;
+                }
+
+
+              }
+            </style>
+            <!-- Showcase Holder -->
+
+            <!-- Showcase Gallery -->
+            <div id="image-slider">
+              <div class="image-slider-wrapper">
+                <div class="slider-img" data-slide="1" data-src="assets/images/gallarynew/g5.jpg">
+                  <div class="hero-video-wrapper">
+                    <video loop muted autoplay playsinline class="bgvid">
+                      <source src=" https://cdn.pixabay.com/video/2024/02/11/200139-912119482_tiny.mp4"
+                        style="object-fit: cover;" type="video/mp4" />
+                      <source
+                        src="https://media.istockphoto.com/id/2150203665/video/a-shot-of-an-indian-bride-showing-her-bridal-jewellery-at-her-indian-wedding-in-india.mp4?s=mp4-640x640-is&k=20&c=7YwdT35ggFSnwJ5gQub9GrgmdkpOI6pvAKze3VjQZnk="
+                        type="video/webm" />
+                    </video>
+                  </div>
+                </div>
+                <div class="slider-img" data-slide="2" data-src="assets/images/gallarynew/g15.jpg">
+                  <div class="hero-video-wrapper">
+                    <video loop muted autoplay playsinline class="bgvid">
+                      <source src="https://cdn.pixabay.com/video/2021/09/08/87806-601467089_tiny.mp4"
+                        style="object-fit: cover;" type="video/mp4" />
+                      <source
+                        src="https://media.istockphoto.com/id/2150203665/video/a-shot-of-an-indian-bride-showing-her-bridal-jewellery-at-her-indian-wedding-in-india.mp4?s=mp4-640x640-is&k=20&c=7YwdT35ggFSnwJ5gQub9GrgmdkpOI6pvAKze3VjQZnk="
+                        type="video/webm" />
+                    </video>
+                  </div>
+                </div>
+                <div class="slider-img" data-slide="3" data-src="assets/images/gallarynew/g17.jpg">
+                  <div class="hero-video-wrapper">
+                    <video loop muted autoplay playsinline class="bgvid">
+                      <source src="https://cdn.pixabay.com/video/2023/11/20/189858-886618183_tiny.mp4"
+                        style="object-fit: cover;" type="video/mp4" />
+                      <source
+                        src="https://media.gettyimages.com/id/1224104034/video/indian-or-hindu-traditional-ceremony-venue-decoration.mp4?s=mp4-640x640-gi&k=20&c=9zI2ug4j-hS_pzAz4fFJgSmmzQVNRuHjPmb4pbWz96s="
+                        type="video/webm" />
+                    </video>
+                  </div>
+                </div>
+                <div class="slider-img" data-slide="4" data-src="assets/images/gallarynew/g18.jpg"></div>
+                <div class="slider-img" data-slide="5" data-src="assets/images/gallarynew/g2.jpg"></div>
+                <div class="slider-img" data-slide="6" data-src="assets/images/gallarynew/g14.jpg"></div>
+                <div class="slider-img" data-slide="7" data-src="assets/images/gallarynew/g16.jpg"></div>
+              </div>
+            </div>
+            <style>
+              @media (max-width: 768px) {
+                #image-slider {
+                  margin-top: 120px;
+                }
+              }
+            </style>
+            <!--/Showcase Gallery -->
+          </div>
+          <!--/Main Content -->
         </div>
-        <!--/Page Content -->
-      </div>
-    </main>
+        <!--/Main -->
 
-    <div class="cd-cover-layer"></div>
-    <div id="magic-cursor">
-      <div id="ball">
-        <div id="ball-loader"></div>
+        <!-- Footer -->
+
+        <!--/Footer -->
       </div>
+      <!--/Page Content -->
     </div>
-    <div id="rotate-device"></div>
+  </main>
 
-    <script src="assets/new/js/jquery.min.js"></script>
-    <script src="assets/new/js/plugins.js"></script>
-    <script src="assets/new/js/scripts.js"></script>
-  </body>
+  <div class="cd-cover-layer"></div>
+  <div id="magic-cursor">
+    <div id="ball">
+      <div id="ball-loader"></div>
+    </div>
+  </div>
+  <div id="rotate-device"></div>
+
+  <script src="assets/new/js/jquery.min.js"></script>
+  <script src="assets/new/js/plugins.js"></script>
+  <script src="assets/new/js/scripts.js"></script>
+</body>
+
 </html>
